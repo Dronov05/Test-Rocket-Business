@@ -1,1 +1,133 @@
-// font-family: 'PT Sans Caption', sans-serif;
+@import './normalize';
+@import'./vars';
+
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::after,
+**::before {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
+}
+
+html,
+body {
+   height: 100%;
+}
+
+body {
+   font-family: 'PT Sans Caption', sans-serif;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #364844;
+}
+
+a {
+   text-decoration: none;
+   color: $linkColor;
+}
+
+ul {
+   list-style: none;
+}
+
+.container {
+   max-width: 1160px;
+   margin: 0 auto;
+   padding: 0 10px;
+}
+
+.button {
+   min-width: 197px;
+   height: 43px;
+   display: inline-block;
+   color: #fff;
+   background-color: $btnColor;
+   padding: 11px 24px;
+   font-size: 14px;
+   font-family: 'PT Sans Caption', sans-serif;
+   border: none;
+   border-radius: 50px;
+   outline: none;
+   cursor: pointer;
+
+   &:hover {
+      background-color: #00D29F;
+   }
+}
+
+.header {
+   &__inner-top {
+      position: relative;
+      padding: 22px 0;
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__inner-left {
+      display: flex;
+      align-items: flex-end;
+      gap: 0 44px;
+      max-width: 250px;
+   }
+
+   &__geoloc-city {
+      max-width: 133px;
+      font-size: 14px;
+      color: #364844;
+      position: relative;
+
+      &::before {
+         content: '';
+         position: absolute;
+         background-image: url(../images/placeholder.svg);
+         width: 20px;
+         height: 20px;
+         left: -20px;
+         top: calc(50% - 20px);
+      }
+   }
+
+   &__geoloc-street {
+      color: #868686;
+   }
+
+   &__number {
+      position: relative;
+      color: #364844;
+
+      &::before {
+         content: '';
+         position: absolute;
+         background-image: url(../images/whatsappHeader.svg);
+         width: 28px;
+         height: 28px;
+         left: -34px;
+         top: calc(50% - 15px);
+      }
+   }
+
+   &__inner-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0 35px;
+   }
+
+   &__bg-bottom {
+      background-color: $bgHeaderBottom;
+   }
+}
+
+.menu {
+   &__list {
+      display: flex;
+      gap: 0 30px;
+      margin: 0;
+      padding: 10px 0;
+   }
+}
