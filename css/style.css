@@ -267,6 +267,29 @@ ul {
   gap: 0 44px;
   max-width: 250px;
 }
+.header__btn {
+  display: block;
+  width: 37px;
+  height: 26px;
+  position: relative;
+  z-index: 5;
+  cursor: pointer;
+}
+.header__btn span {
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #1FA181;
+}
+.header__btn span:first-child {
+  top: 0;
+}
+.header__btn span:last-child {
+  top: auto;
+  bottom: 0;
+}
 .header__geoloc-city {
   max-width: 133px;
   font-size: 14px;
@@ -412,7 +435,7 @@ ul {
 }
 .check__left {
   margin-left: 63px;
-  max-width: 613px;
+  max-width: 406px;
   width: 100%;
 }
 .check__title {
@@ -468,10 +491,13 @@ ul {
   color: #fff;
 }
 .check__right {
+  height: 100%;
+  width: 692px;
+  width: 100%;
   background-image: url(../images/check-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 28% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 28% 100%);
 }
@@ -522,4 +548,241 @@ ul {
 .swiper-button-next:hover {
   -webkit-filter: invert(62%) sepia(47%) saturate(3689%) hue-rotate(124deg) brightness(93%) contrast(90%);
           filter: invert(62%) sepia(47%) saturate(3689%) hue-rotate(124deg) brightness(93%) contrast(90%);
+}
+
+@media (max-width: 1540px) {
+  .top__left {
+    padding-right: 20px;
+  }
+  .top__right {
+    position: inherit;
+  }
+}
+@media (max-width: 1200px) {
+  .menu__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .top__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+  }
+  .top__left {
+    padding-right: 0;
+    text-align: center;
+  }
+  .top__title {
+    margin-top: 50px;
+  }
+  .top__text {
+    margin-bottom: 30px;
+  }
+  .top__right {
+    max-width: inherit;
+  }
+}
+@media (max-width: 1160px) {
+  .swiper-button-prev::after {
+    right: -479px;
+  }
+  .swiper-button-next::after {
+    left: -479px;
+  }
+}
+@media (max-width: 1120px) {
+  .swiper-button-prev::after {
+    right: -469px;
+  }
+  .swiper-button-next::after {
+    left: -469px;
+  }
+}
+@media (max-width: 1095px) {
+  .swiper-button-prev::after {
+    right: -449px;
+  }
+  .swiper-button-next::after {
+    left: -449px;
+  }
+}
+@media (max-width: 1050px) {
+  .swiper-button-prev::after {
+    right: -419px;
+  }
+  .swiper-button-next::after {
+    left: -419px;
+  }
+}
+@media (max-width: 1000px) {
+  .swiper-button-prev::after {
+    right: -379px;
+  }
+  .swiper-button-next::after {
+    left: -379px;
+  }
+}
+@media (max-width: 915px) {
+  .footer__menu-list {
+    padding: 0 10px;
+  }
+  .swiper-button-prev::after {
+    right: -339px;
+  }
+  .swiper-button-next::after {
+    left: -339px;
+  }
+}
+@media (max-width: 830px) {
+  .header__btn {
+    display: block;
+    margin-left: 9px;
+  }
+  .header__bg-bottom {
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(69, 146, 127, 0.9);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 65px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  }
+  .header__bg-bottom.header__bg-bottom--active {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .header__geoloc-city::before {
+    content: none;
+  }
+  .header__geoloc-street.header__geoloc-street--active {
+    display: none;
+  }
+  .header__button--active {
+    background-image: url(../images/menu-close.svg);
+    background-color: transparent;
+    max-width: 37px;
+    width: 100%;
+    height: 26px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  .header__number::before {
+    content: none;
+  }
+  .menu__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 48px;
+    padding-bottom: 0;
+    padding: 48px 0 0 9px;
+    gap: 10px 0;
+  }
+  .footer__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 81px 7px 41px;
+  }
+  .footer__logo {
+    margin-top: -40px;
+  }
+  .footer__menu {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer__menu-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    margin: 31px 0 0 0;
+    gap: 15px 0;
+  }
+  .footer__messengers {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-top: -30px;
+    gap: 0 20px;
+  }
+  .footer__messengers-img {
+    width: 23px;
+    height: 23px;
+  }
+  .swiper-button-prev::after {
+    right: -289px;
+  }
+  .swiper-button-next::after {
+    left: -289px;
+  }
+}
+@media (max-width: 730px) {
+  .swiper-button-prev::after {
+    right: -239px;
+  }
+  .swiper-button-next::after {
+    left: -239px;
+  }
+}
+@media (max-width: 630px) {
+  .swiper-button-prev::after {
+    right: -179px;
+  }
+  .swiper-button-next::after {
+    left: -179px;
+  }
+}
+@media (max-width: 530px) {
+  .swiper-button-prev::after {
+    right: -139px;
+  }
+  .swiper-button-next::after {
+    left: -139px;
+  }
+}
+@media (max-width: 440px) {
+  .swiper-button-prev::after {
+    right: -89px;
+  }
+  .swiper-button-next::after {
+    left: -89px;
+  }
+}
+@media (max-width: 360px) {
+  .swiper-button-prev::after {
+    right: -59px;
+  }
+  .swiper-button-next::after {
+    left: -59px;
+  }
 }/*# sourceMappingURL=style.css.map */

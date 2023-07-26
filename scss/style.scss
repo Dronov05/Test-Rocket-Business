@@ -83,6 +83,45 @@ ul {
       max-width: 250px;
    }
 
+   // &__btn {
+   //    background-image: url(../images/menu.svg);
+   //    background-color: transparent;
+   //    max-width: 37px;
+   //    width: 100%;
+   //    height: 26px;
+   //    border: none;
+   //    padding: 0;
+   //    cursor: pointer;
+   //    display: none
+   // }
+
+   &__btn {
+      display: block;
+      width: 37px;
+      height: 26px;
+      position: relative;
+      z-index: 5;
+      cursor: pointer;
+
+      span {
+         position: absolute;
+         top: calc(50% - 2px);
+         left: 0;
+         width: 100%;
+         height: 4px;
+         background-color: #1FA181;
+
+         &:first-child {
+            top: 0;
+         }
+
+         &:last-child {
+            top: auto;
+            bottom: 0;
+         }
+      }
+   }
+
    &__geoloc-city {
       max-width: 133px;
       font-size: 14px;
@@ -227,7 +266,7 @@ ul {
 
    &__left {
       margin-left: 63px;
-      max-width: 613px;
+      max-width: 406px;
       width: 100%;
    }
 
@@ -293,10 +332,13 @@ ul {
    }
 
    &__right {
+      height: 100%;
+      width: 692px;
+      width: 100%;
       background-image: url(../images/check-img.jpg);
       background-repeat: no-repeat;
       background-position: center;
-      background-size: contain;
+      background-size: cover;
       clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 28% 100%);
    }
 }
@@ -343,6 +385,7 @@ ul {
 
 }
 
+
 .swiper-button-next::after {
    content: url(../images/right-arrow.png);
    // content: 'g';
@@ -356,5 +399,266 @@ ul {
 .swiper-button-next {
    &:hover {
       filter: invert(62%) sepia(47%) saturate(3689%) hue-rotate(124deg) brightness(93%) contrast(90%);
+   }
+}
+
+@media (max-width: 1540px) {
+   .top {
+      &__left {
+         padding-right: 20px;
+      }
+
+      &__right {
+         position: inherit;
+      }
+   }
+}
+
+@media (max-width: 1200px) {
+   .menu__list {
+      justify-content: center;
+   }
+
+   .top {
+      &__content {
+         flex-direction: column;
+         align-items: center;
+         height: 100%;
+      }
+
+      &__left {
+         padding-right: 0;
+         text-align: center;
+      }
+
+      &__title {
+         margin-top: 50px;
+      }
+
+      &__text {
+         margin-bottom: 30px;
+      }
+
+      &__right {
+         max-width: inherit;
+      }
+   }
+}
+
+@media (max-width: 1160px) {
+   .swiper-button-prev::after {
+      right: -479px;
+   }
+
+   .swiper-button-next::after {
+      left: -479px;
+   }
+}
+
+@media (max-width: 1120px) {
+   .swiper-button-prev::after {
+      right: -469px;
+   }
+
+   .swiper-button-next::after {
+      left: -469px;
+   }
+}
+
+@media (max-width: 1095px) {
+   .swiper-button-prev::after {
+      right: -449px;
+   }
+
+   .swiper-button-next::after {
+      left: -449px;
+   }
+}
+
+@media (max-width: 1050px) {
+   .swiper-button-prev::after {
+      right: -419px;
+   }
+
+   .swiper-button-next::after {
+      left: -419px;
+   }
+}
+
+@media (max-width: 1120px) {}
+
+@media (max-width: 1000px) {
+   .swiper-button-prev::after {
+      right: -379px;
+   }
+
+   .swiper-button-next::after {
+      left: -379px;
+   }
+}
+
+@media (max-width: 915px) {
+   .footer__menu-list {
+      padding: 0 10px;
+   }
+
+   .swiper-button-prev::after {
+      right: -339px;
+   }
+
+   .swiper-button-next::after {
+      left: -339px;
+   }
+}
+
+@media (max-width: 830px) {
+   .header__btn {
+      display: block;
+      margin-left: 9px;
+   }
+
+   .header__bg-bottom {
+      position: absolute;
+      z-index: 5;
+      background-color: rgba(69, 146, 127, 0.90);
+      flex-direction: column;
+      top: 65px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100vh;
+      transform: translateX(-100%);
+      transition: transform .3s ease;
+   }
+
+   .header__bg-bottom.header__bg-bottom--active {
+      transform: translateX(0);
+   }
+
+   .header__geoloc-city::before {
+      content: none;
+   }
+
+   .header__geoloc-street.header__geoloc-street--active {
+      display: none;
+   }
+
+   // тут не понятки с header button time: 9:06 and 31:24
+   .header__button--active {
+      background-image: url(../images/menu-close.svg);
+      background-color: transparent;
+      max-width: 37px;
+      width: 100%;
+      height: 26px;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+   }
+
+   .header__number::before {
+      content: none;
+   }
+
+   .menu__list {
+      flex-direction: column;
+
+      padding-top: 48px;
+      padding-bottom: 0;
+      padding: 48px 0 0 9px;
+      gap: 10px 0;
+   }
+
+   .footer {
+      &__inner {
+         flex-direction: column;
+         align-items: flex-start;
+         padding: 81px 7px 41px;
+      }
+
+      &__logo {
+         margin-top: -40px;
+      }
+
+      &__menu {
+         order: 2;
+      }
+
+      &__menu-list {
+         flex-direction: column;
+         padding: 0;
+         margin: 31px 0 0 0;
+         gap: 15px 0;
+      }
+
+      &__messengers {
+         align-self: flex-end;
+         order: 1;
+         margin-top: -30px;
+         gap: 0 20px;
+      }
+
+      &__messengers-img {
+         width: 23px;
+         height: 23px;
+      }
+
+   }
+
+   .swiper-button-prev::after {
+      right: -289px;
+   }
+
+   .swiper-button-next::after {
+      left: -289px;
+   }
+}
+
+@media (max-width: 730px) {
+   .swiper-button-prev::after {
+      right: -239px;
+   }
+
+   .swiper-button-next::after {
+      left: -239px;
+   }
+}
+
+@media (max-width: 630px) {
+   .swiper-button-prev::after {
+      right: -179px;
+   }
+
+   .swiper-button-next::after {
+      left: -179px;
+   }
+}
+
+@media (max-width: 530px) {
+   .swiper-button-prev::after {
+      right: -139px;
+   }
+
+   .swiper-button-next::after {
+      left: -139px;
+   }
+}
+
+@media (max-width: 440px) {
+   .swiper-button-prev::after {
+      right: -89px;
+   }
+
+   .swiper-button-next::after {
+      left: -89px;
+   }
+}
+
+@media (max-width: 360px) {
+   .swiper-button-prev::after {
+      right: -59px;
+   }
+
+   .swiper-button-next::after {
+      left: -59px;
    }
 }
