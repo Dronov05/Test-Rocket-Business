@@ -2,11 +2,15 @@
 <html lang="en">
 
 <head>
+   <meta name="description"
+      content="Комплексное обследование организма в Ростове-на-Дону всего за 1550 руб. Узнай все о состоянии своего орагнизма в МЦ 'Лого'. Check-Up программа доступна каждому!">
+   <meta name="keywords" content="Check-up обследования анализы">
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/swiper.css">
    <title>Test page</title>
    <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -78,6 +82,52 @@
                </div>
             </div>
          </section>
+         <section class="check">
+            <div class="container">
+               <div class="swiper">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <div class="check__inner">
+                           <div class="check__left">
+                              <h2 class="check__title">Check-UP</h2>
+                              <span class="check__span">для мужчин</span>
+                              <ul class="check__list">
+                                 <li class="check__list-item">Гормональный скрининг</li>
+                                 <li class="check__list-item">Тестостерон</li>
+                                 <li class="check__list-item">Свободный тестостерон</li>
+                                 <li class="check__list-item">Глобулин, связывающий половые гормоны</li>
+                              </ul>
+                              <div class="check__price">
+                                 <span class="check__price-sale">Всего 2800₽</span>
+                                 <span class="check__price-full">3500₽</span>
+                              </div>
+                              <div class="check__btn">
+                                 <button class="button">Записаться</button>
+                                 <a href="" class="butto check__link">Подробнее</a>
+                              </div>
+                           </div>
+                           <div class="check__right">
+                              <img src="images/check-img.jpg" alt="doctor" class="check__right-img">
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">Slide 2</div>
+                     <div class="swiper-slide">Slide 3</div>
+                  </div>
+
+
+               </div>
+            </div>
+            <div class="container">
+               <div class="swiper swiper-pag__bottom">
+                  <div class="swiper-pagination"></div>
+
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+               </div>
+            </div>
+
+         </section>
       </main>
 
       <footer class="footer">
@@ -106,15 +156,24 @@
                   </ul>
                </nav>
                <div class="footer__messengers">
-                  <img src="images/instagram.svg" alt="instagram" class="footer__messengers-img">
-                  <img src="images/whatsappFooter.svg" alt="whatsapp" class="footer__messengers-img">
-                  <img src="images/telegram.svg" alt="telegram" class="footer__messengers-img">
+                  <a href="#" class="footer__messengers-link">
+                     <img src="images/instagram.svg" alt="instagram" class="footer__messengers-img">
+                  </a>
+                  <a href="#" class="footer__messengers-link">
+                     <img src="images/whatsappFooter.svg" alt="whatsapp" class="footer__messengers-img">
+                  </a>
+                  <a href="#" class="footer__messengers-link">
+                     <img src="images/telegram.svg" alt="telegram" class="footer__messengers-img">
+                  </a>
                </div>
             </div>
          </div>
       </footer>
    </div>
 
+
+   <script src="js/swiper.js"></script>
+   <script src="js/main.js"></script>
 </body>
 
 </html>
