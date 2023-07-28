@@ -118,7 +118,7 @@
                                  </div>
                                  <div class="check__btn">
                                     <button class="button">Записаться</button>
-                                    <a href="" class="butto check__link">Подробнее</a>
+                                    <a href="" class="check__link button-link">Подробнее</a>
                                  </div>
                               </div>
 
@@ -131,22 +131,18 @@
                            </div>
                         </div>
                      </div>
-                     <div class="swiper-slide">Slide 2</div>
-                     <div class="swiper-slide">Slide 3</div>
+                     <div class="swiper-slide"></div>
+                     <div class="swiper-slide"></div>
+                     <div class="swiper-slide"></div>
                   </div>
-
-
+                  <div class="slider-nav">
+                     <div class="slider-prev slider-btn swiper-button-prev"></div>
+                     <div class="slider-pogination swiper-pagination">
+                     </div>
+                     <div class="slider-next slider-btn swiper-button-next"></div>
+                  </div>
                </div>
             </div>
-            <div class="container">
-               <div class="swiper swiper-pag__bottom">
-                  <div class="swiper-pagination"></div>
-
-                  <div class="swiper-button-prev"></div>
-                  <div class="swiper-button-next"></div>
-               </div>
-            </div>
-
          </section>
       </main>
 
@@ -191,8 +187,27 @@
       </footer>
    </div>
 
-
+   <div class="modal">
+      <div class="modal__overlay">
+         <div class="modal__window">
+            <div class="modal__header">
+               <span class="modal__title">Записаться на приём</span>
+               <span class="modal__close">&times;</span>
+            </div>
+            <div class="modal__body">
+               <form class="modal__form" action="">
+                  <input required class="modal__input" type="text" placeholder="Ваше имя">
+                  <input required class="modal__input" type="text" placeholder="Ваш телефон">
+                  <textarea rows="3" class="modal__textarea" placeholder="Ваш комментарий"></textarea>
+                  <button type="submit" class="button">Записаться</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
 
 </body>
 
 </html>
+
+<!-- 22:20 -->
