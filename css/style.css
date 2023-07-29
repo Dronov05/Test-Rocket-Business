@@ -585,11 +585,11 @@ ul {
 }
 
 .slider-prev {
-  background-image: url(/images/left-arrow.svg);
+  background-image: url(../images/left-arrow.svg);
 }
 
 .slider-next {
-  background-image: url(/images/right-arrow.svg);
+  background-image: url(../images/right-arrow.svg);
 }
 
 .slider-btn {

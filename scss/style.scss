@@ -388,13 +388,6 @@ ul {
    }
 
    &__right {
-      // height: 100%;
-      // width: 692px;
-      // width: 100%;
-      // // background-image: url(../images/check-img.jpg);
-      // background-repeat: no-repeat;
-      // background-position: center;
-      // background-size: cover;
       clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 28% 100%);
    }
 
@@ -458,11 +451,11 @@ ul {
 }
 
 .slider-prev {
-   background-image: url(/images/left-arrow.svg);
+   background-image: url(../images/left-arrow.svg);
 }
 
 .slider-next {
-   background-image: url(/images/right-arrow.svg);
+   background-image: url(../images/right-arrow.svg);
 }
 
 .slider-btn {
