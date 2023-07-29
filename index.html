@@ -42,7 +42,7 @@
                <div class="header__inner-right">
                   <a href="tel:+7(863) 000 00 00" class="header__number">+7(863) 000 00 00</a>
                   <a href="#" class="header__geoloc-city header__geoloc-mob">Ростов-На-Дону</a>
-                  <button class="button header__button">Записаться на прием</button>
+                  <button class="button header__button" id="header-btn">Записаться на прием</button>
                </div>
             </div>
          </div>
@@ -69,7 +69,7 @@
                            </li>
                         </ul>
                      </nav>
-                     <button class="button button_mob-menu">Записаться на прием</button>
+                     <button class="button button_mob-menu" id="mob-btn">Записаться на прием</button>
                   </div>
                </div>
             </div>
@@ -117,7 +117,7 @@
                                     <span class="check__price-full">3500₽</span>
                                  </div>
                                  <div class="check__btn">
-                                    <button class="button">Записаться</button>
+                                    <button class="button" id="check-up-btn">Записаться</button>
                                     <a href="" class="check__link button-link">Подробнее</a>
                                  </div>
                               </div>
@@ -145,6 +145,25 @@
             </div>
          </section>
       </main>
+
+      <div class="modal">
+         <div class="modal__overlay">
+            <div class="modal__window">
+               <div class="modal__header">
+                  <span class="modal__title">Записаться на приём</span>
+                  <span class="modal__close">&times;</span>
+               </div>
+               <div class="modal__body">
+                  <form class="modal__form" action="">
+                     <input required class="modal__input" type="text" placeholder="Ваше имя">
+                     <input required class="modal__input" type="text" placeholder="Ваш телефон">
+                     <textarea rows="3" class="modal__textarea" placeholder="Ваш комментарий"></textarea>
+                     <button type="submit" class="button" id="modal-btn-close">Записаться</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
 
       <footer class="footer">
          <div class="container">
@@ -187,27 +206,8 @@
       </footer>
    </div>
 
-   <div class="modal">
-      <div class="modal__overlay">
-         <div class="modal__window">
-            <div class="modal__header">
-               <span class="modal__title">Записаться на приём</span>
-               <span class="modal__close">&times;</span>
-            </div>
-            <div class="modal__body">
-               <form class="modal__form" action="">
-                  <input required class="modal__input" type="text" placeholder="Ваше имя">
-                  <input required class="modal__input" type="text" placeholder="Ваш телефон">
-                  <textarea rows="3" class="modal__textarea" placeholder="Ваш комментарий"></textarea>
-                  <button type="submit" class="button">Записаться</button>
-               </form>
-            </div>
-         </div>
-      </div>
-   </div>
+
 
 </body>
 
 </html>
-
-<!-- 22:20 -->
