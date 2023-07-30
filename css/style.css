@@ -605,6 +605,7 @@ ul {
 .slider-pogination {
   position: relative;
   width: auto;
+  font-size: 18px;
 }
 
 .modal__overlay {
@@ -1051,6 +1052,6 @@ ul {
     max-width: 240px;
     width: 100%;
     text-align: center;
-    padding: 8px 0;
+    padding: 10px 0;
   }
 }/*# sourceMappingURL=style.css.map */
