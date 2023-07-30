@@ -40,7 +40,7 @@
 
                </div>
                <div class="header__inner-right">
-                  <a href="tel:+7(863) 000 00 00" class="header__number">+7(863) 000 00 00</a>
+                  <a href="tel:+78630000000" class="header__number">+7(863) 000 00 00</a>
                   <a href="#" class="header__geoloc-city header__geoloc-mob">Ростов-На-Дону</a>
                   <button class="button header__button" id="header-btn">Записаться на прием</button>
                </div>
@@ -130,9 +130,99 @@
                            </div>
                         </div>
                      </div>
-                     <div class="swiper-slide"></div>
-                     <div class="swiper-slide"></div>
-                     <div class="swiper-slide"></div>
+                     <div class="swiper-slide">
+                        <div class="check__inner">
+                           <div class="check__left">
+                              <div class="check__left-content">
+                                 <h2 class="check__title">Check-UP</h2>
+                                 <span class="check__span">для мужчин</span>
+                                 <ul class="check__list">
+                                    <li class="check__list-item">Гормональный скрининг</li>
+                                    <li class="check__list-item">Тестостерон</li>
+                                    <li class="check__list-item">Свободный тестостерон</li>
+                                    <li class="check__list-item">Глобулин, связывающий половые гормоны</li>
+                                 </ul>
+                                 <div class="check__price">
+                                    <span class="check__price-sale">Всего 2800₽</span>
+                                    <span class="check__price-full">3500₽</span>
+                                 </div>
+                                 <div class="check__btn">
+                                    <button class="button" id="check-up-btn">Записаться</button>
+                                    <a href="" class="check__link button-link">Подробнее</a>
+                                 </div>
+                              </div>
+
+                           </div>
+                           <div class="check__right">
+                              <picture>
+                                 <source media="(max-width: 375px)" srcset="images/check-img-mob.jpg">
+                                 <img src="images/check-img.jpg" alt="doctor" class="check__right-img">
+                              </picture>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="check__inner">
+                           <div class="check__left">
+                              <div class="check__left-content">
+                                 <h2 class="check__title">Check-UP</h2>
+                                 <span class="check__span">для мужчин</span>
+                                 <ul class="check__list">
+                                    <li class="check__list-item">Гормональный скрининг</li>
+                                    <li class="check__list-item">Тестостерон</li>
+                                    <li class="check__list-item">Свободный тестостерон</li>
+                                    <li class="check__list-item">Глобулин, связывающий половые гормоны</li>
+                                 </ul>
+                                 <div class="check__price">
+                                    <span class="check__price-sale">Всего 2800₽</span>
+                                    <span class="check__price-full">3500₽</span>
+                                 </div>
+                                 <div class="check__btn">
+                                    <button class="button" id="check-up-btn">Записаться</button>
+                                    <a href="" class="check__link button-link">Подробнее</a>
+                                 </div>
+                              </div>
+
+                           </div>
+                           <div class="check__right">
+                              <picture>
+                                 <source media="(max-width: 375px)" srcset="images/check-img-mob.jpg">
+                                 <img src="images/check-img.jpg" alt="doctor" class="check__right-img">
+                              </picture>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class="check__inner">
+                           <div class="check__left">
+                              <div class="check__left-content">
+                                 <h2 class="check__title">Check-UP</h2>
+                                 <span class="check__span">для мужчин</span>
+                                 <ul class="check__list">
+                                    <li class="check__list-item">Гормональный скрининг</li>
+                                    <li class="check__list-item">Тестостерон</li>
+                                    <li class="check__list-item">Свободный тестостерон</li>
+                                    <li class="check__list-item">Глобулин, связывающий половые гормоны</li>
+                                 </ul>
+                                 <div class="check__price">
+                                    <span class="check__price-sale">Всего 2800₽</span>
+                                    <span class="check__price-full">3500₽</span>
+                                 </div>
+                                 <div class="check__btn">
+                                    <button class="button" id="check-up-btn">Записаться</button>
+                                    <a href="" class="check__link button-link">Подробнее</a>
+                                 </div>
+                              </div>
+
+                           </div>
+                           <div class="check__right">
+                              <picture>
+                                 <source media="(max-width: 375px)" srcset="images/check-img-mob.jpg">
+                                 <img src="images/check-img.jpg" alt="doctor" class="check__right-img">
+                              </picture>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                   <div class="slider-nav">
                      <div class="slider-prev slider-btn swiper-button-prev"></div>
@@ -153,9 +243,10 @@
                   <span class="modal__close">&times;</span>
                </div>
                <div class="modal__body">
-                  <form class="modal__form" action="">
-                     <input required class="modal__input" type="text" placeholder="Ваше имя">
-                     <input required class="modal__input" type="text" placeholder="Ваш телефон">
+                  <form class="modal__form" action="#">
+                     <input required class="modal__input" type="text" placeholder="Ваше имя"
+                        pattern="^([А-ЯЁа-яёA-Za-z]+)$">
+                     <input required class="modal__input" type="text" placeholder="Ваш телефон" pattern="^([0-9]+)$">
                      <textarea rows="3" class="modal__textarea" placeholder="Ваш комментарий"></textarea>
                      <button type="submit" class="button" id="modal-btn-close">Записаться</button>
                   </form>
