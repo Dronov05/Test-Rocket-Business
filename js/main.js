@@ -28,9 +28,9 @@ mobBtn.addEventListener('click', () => {
    modalOpen.classList.add('open')
 })
 
-modalBtnClose.addEventListener('click', () => {
-   modalOpen.classList.remove('open')
-})
+// modalBtnClose.addEventListener('click', () => {
+//    modalOpen.classList.remove('open')
+// })
 
 modalClose.addEventListener('click', () => {
    modalOpen.classList.remove('open')
