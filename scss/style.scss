@@ -359,6 +359,10 @@ ul {
    &__right-img {
       display: block;
       max-width: 100%;
+      width: 692px;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0 5px 5px 0;
    }
 }
 

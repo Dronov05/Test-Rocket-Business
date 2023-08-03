@@ -531,6 +531,11 @@ ul {
 .check__right-img {
   display: block;
   max-width: 100%;
+  width: 692px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 5px 5px 0;
 }
 
 .swiper-wrapper {
