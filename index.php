@@ -165,12 +165,12 @@ if ($query = $db->query("SELECT * FROM test1")) {
                   <span class="modal__close">&times;</span>
                </div>
                <div class="modal__body">
-                  <form class="modal__form" action="#">
-                     <input required class="modal__input" type="text" placeholder="Ваше имя"
+                  <form class="modal__form" action="contact.php">
+                     <input required class="modal__input" type="text" name="userName" placeholder="Ваше имя"
                         pattern="^([А-ЯЁа-яёA-Za-z]+)$">
-                     <input required class="modal__input" type="text" placeholder="Ваш телефон" pattern="^([0-9]+)$">
-                     <textarea rows="3" class="modal__textarea" placeholder="Ваш комментарий"></textarea>
-                     <button type="submit" class="button" id="modal-btn-close">Записаться</button>
+                     <input required class="modal__input" type="text" name="number" placeholder="Ваш телефон" pattern="^([0-9]+)$">
+                     <textarea rows="3" class="modal__textarea" name="text" placeholder="Ваш комментарий"></textarea>
+                     <button type="submit" class="button" name="submit" id="modal-btn-close">Записаться</button>
                   </form>
                </div>
             </div>
